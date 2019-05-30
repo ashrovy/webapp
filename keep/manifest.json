@@ -23,7 +23,7 @@
    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1OHXMA45INxjl9CAZWMUS7xu+nx/Ri7Nkl7bY+oQJ77a0fiYyLZVpWkQVhfkDcBmPbqVk1gmP7GXd6VP5Y+IFAPtfbalgCFBGgxymjppoE9om24kEvFkfBB6ztUMLvcHpCNwIs4MtvU82u69hplT2k9lP9CfxbOc3f4PU0FpdkwIDAQAB",
    "manifest_version": 2,
    "minimum_chrome_version": "42",
-   "name": "__MSG_appName__",
+   "name": "Keep",
    "oauth2": {
       "client_id": "192748556389-u13aelnnjsmn5df1voa2d3oimlbd8led.apps.googleusercontent.com",
       "scopes": [ "https://www.googleapis.com/auth/memento", "https://www.googleapis.com/auth/client_channel", "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/peopleapi.readonly", "https://www.googleapis.com/auth/cclog", "https://www.googleapis.com/auth/taskassist.readonly", "https://www.googleapis.com/auth/reminders" ]
@@ -40,7 +40,7 @@
       "nacl_arch": "arm",
       "sub_package_path": "_platform_specific/arm/"
    } ],
-   "short_name": "__MSG_shortName__",
+   "short_name": "Keep",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "3.1.19142.814"
 }
