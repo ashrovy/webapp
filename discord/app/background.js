@@ -8,8 +8,8 @@
                 'innerBounds': {
                       'width': 400,
                       'height': 665,
-                      'minWidth': 700,
-                      'minHeight': 600,
+                      'minWidth': 1024,
+                      'minHeight': 500,
                       'maxWidth': 300,
                       'maxHeight': 600
                 }, frame : {'color' : '#26262B'},
