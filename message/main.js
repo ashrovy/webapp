@@ -34,7 +34,7 @@ function runApp() {
       'maxHeight': 600
     },
 	frame: {
-		'color': '#0D6FEC'
+		'color': '#ffffff'
     }
   });
 }

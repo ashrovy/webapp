@@ -17,6 +17,5 @@
    "name": "Task",
    "permissions": [ "contextMenus","audio", "audioCapture", "notifications", "videoCapture", "webview", "tabs", "storage", "notifications", "http://*.facebook.com/", "https://*.facebook.com/", "http://*.messenger.com/", "https://*.messenger.com/" ],
    "short_name": "Task",
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.2"
 }

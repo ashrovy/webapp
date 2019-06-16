@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Canva",
+  "minimum_chrome_version": "35.0.0.0",
+  "version": "0.8",
+  "icons": {
+    
+    "128": "icon.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["config.js", "main.js"]
+    }
+  },
+  "permissions": [
+    "contextMenus",
+    "audio", "audioCapture", "notifications", "videoCapture", "webview", "tabs", "storage", "notifications", "http://*.facebook.com/", "https://*.facebook.com/", "http://*.messenger.com/", "https://*.messenger.com/"
+  ]
+}

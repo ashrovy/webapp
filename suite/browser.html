@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="trim full">
+<head>
+  <link rel="stylesheet" href="browser.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="font/css/all.css">
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+  <script src="context_menu.js"></script>
+  <script src="tabs.js"></script>
+  <script src="find_box_controller.js"></script>
+  <script src="zoom_box_controller.js"></script>
+  <script src="exit_box_controller.js"></script>
+  <script src="permission_box_controller.js"></script>
+  <script src="browser.js"></script>
+  <script src="browser_main.js"></script>
+</head>
+<body class="trim full">
+    <div id="controls" class="collapse">
+      <div id="tab-controls" class="">
+        <ul class="nav nav-tabs" id="tab-container" frameborder=0>&nbsp;&nbsp;
+          <li class="nav-link hide" id="new-tab">&nbsp;&nbsp;
+            <a href="#new-tab"><i class="fas fa-plus-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<div class="collapse" tabindex="-1" role="dialog">  
+    <div id="browser-controls" class="">
+      <button id="back" title="Go Back">
+        <i class="fas fa-chevron-circle-left"></i>
+      </button>
+      <button id="forward" title="Go Forward">
+        <i class="fas fa-chevron-circle-right"></i>
+      </button>
+      <button id="home" title="Go Home">
+        <i class="fas fa-igloo"></i>
+      </button>
+      <button id="reload" title="Reload">
+        <i class="fas fa-spinner"></i>
+      </button>
+
+      <form id="location-form">
+        <div id="center-column">
+          <input id="location" type="text" value="">
+        </div>
+        <button type="submit">
+          <i class="fab fa-google-play"></i>
+        </button>
+      </form>
+
+      <button id="zoom">
+        <i class="fas fa-search-plus"></i>
+      </button>
+      <button id="find">
+        <i class="fas fa-search"></i>
+      </button>
+      <button title="Find in Page">
+        <i class="fas fa-search"></i>
+      </button>
+      
+    </div>
+
+    
+  <div id="zoom-box">
+    <form id="zoom-form">
+      <input id="zoom-text" type="text">
+      <input type="submit" value="&#128270;">
+      <button id="zoom-in">&#10133;</button>
+      <button id="zoom-out">&#10134;</button>
+    </form>
+  </div>
+
+  <div id="find-box">
+    <form id="find-form">
+      <input id="find-text" type="text">
+      <div id="find-results"></div>
+      <input type="submit" style="position:absolute; visibility:hidden">
+      <button id="match-case">aA</button>
+      <button id="find-backward">&#60;</button>
+      <button id="find-forward">&#62;</button>
+    </form>
+  </div>
+  <div id="exit-box">
+    <h2> Browser Exit? </h2>
+    <h3> Do you really want to exit browser? </h3>
+    <button id="exit-yes" class="req-exit-button" tabindex="2"> Yes </button>
+    <button id="exit-no" class="req-exit-button" tabindex="4"> No </button>
+  </div>
+
+  <div id="permission-box">
+    <span id="question"></span>
+    <button id="allow" class="req-permission-button"> Permit </button>
+    <button id="deny" class="req-permission-button"> Stop </button>
+  </div>
+
+  
+
+  <div id="lightbox-overlay" class="full trim abs abs-full lightbox-overlay hide">
+  </div>
+
+  <div id="lightbox" class="full trim abs abs-full flex-container column center hide">
+    <div class="flex flex-container row center">
+      <div class="flex flex-container column center lightbox">
+        <h1 class="flex center-text">Chrome Feature Not Supported</h1>
+        <div class="flex center-text">
+          The feature highlighted by this sample app is not supported in
+          your version of Chrome. Make sure your browser is up to date. If
+          you still see this message after updating your browser, try
+          installing
+          a <a href="http://www.chromium.org/getting-involved/dev-channel"
+          target="_blank">dev channel</a> build of Chrome.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="content-container">
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

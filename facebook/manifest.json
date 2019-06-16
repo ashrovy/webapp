@@ -1,32 +1,22 @@
 {
-  "name": "Facebook",
-  "short_name": "Facebook",
-  "description": "__MSG_appDesc__",
-  "version": "0.8.0",
-  "manifest_version": 2,
-  "app": {
-    "background": {
-      "scripts": ["app/background.js"]
-    }
-  },
-  "icons": { "128": "img/icon.png" },
-  "default_locale": "en",
-  "permissions": [
-    "webview",
-    "notifications",
-    "videoCapture",
-    "audioCapture",
-    "fileSystem",
-    "storage",
-    "alarms",
-    "clipboardWrite"
-  ],
-  "webview": {
-    "partitions": [
-      {
-        "name" : "facebook",
-        "accessible_resources": ["*"]
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
       }
-    ]
-  }
+   },
+   "author": "Ron Ashrovy",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png"
+   },
+   
+   "manifest_version": 2,
+   "minimum_chrome_version": "36.0",
+   "name": "Facebook",
+   "permissions": [ "audio", "audioCapture", "notifications", "videoCapture", "webview", "tabs", "storage", "notifications", "http://*.facebook.com/", "https://*.facebook.com/", "http://*.messenger.com/", "https://*.messenger.com/" ],
+   "short_name": "Facebook",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2"
 }
