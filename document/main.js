@@ -28,9 +28,9 @@ function runApp() {
     innerBounds: {
       'width': 945,
       'height': 665,
-      'minWidth': 550,
+      'minWidth': 900,
       'minHeight': 600,
-      'maxWidth': 550,
+      'maxWidth': 900,
       'maxHeight': 600
     },
 	frame: {
